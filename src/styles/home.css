@@ -22,8 +22,8 @@
     border-radius: 20px;
     position: relative;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
 }
 .play-demo .play {
     display: flex;
@@ -37,9 +37,11 @@
     height: 92px;
     background-color: #00DE9A;
     box-shadow: 0 0 0 11px rgba(0, 222, 154, .16);
-    content: url('../assets/play.svg');
+    background-image: url('../assets/play.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
     border-radius: 50%;
-    object-fit: none;
 }
 
 /* Possibilities List */
@@ -60,6 +62,7 @@
     box-shadow: 0 0 20px rgba(24, 148, 255, .1);
     filter: grayscale(100%);
     opacity: .5;
+    background-color: #fff;
 }
 .possibilities ._button:hover {
     box-shadow: 0 0 30px rgba(24, 148, 255, .16);
@@ -71,11 +74,16 @@
     margin-bottom: 16px;
 }
 
-/* Download Box */
-.dlbox {
-    position: relative;
-    overflow: hidden;
+/* Support */
+.support {
+    min-height: 130px;
+    padding: 20px !important;
 }
+.support__text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 @media (min-width: 768px) {
     /* Download Box */
@@ -93,6 +101,7 @@
         scale: .8;
         top: 0;
         right: -50px;
+        z-index: 2;
     }
     .dlbox::after {
         width: 943.75px;
@@ -102,7 +111,17 @@
         content: url('../assets/background.svg');
         object-fit: cover;
         filter: opacity(20%);
-        z-index: 0;
+        z-index: 2;
+    }
+
+    /* Registeration */
+    .registeration::before {
+        display: block;
+        content: url('../assets/background.svg');
+        position: absolute;
+        top: calc(7 * -16px);
+        right: calc(7 * -16px);
+        z-index: -1;
     }
 }
 
@@ -121,11 +140,20 @@
         height: 120px;
     }
     .dlbox {
-        padding-top: 48px;
+        padding-top: 48px !important;
     }
-    /* .dlbox .btn {
-        width: max-content;
-        max-width: max-content;
+    /* Registeration */
+    .registeration-container {
+        padding: 0 13px;
+    }
+    .regImage {
+        padding: 48px 0;
+    }
+    /* Support */
+    .support__text {
+        justify-content: center;
+    }
+    .support__button {
         margin: 0 auto;
-    } */
+    }
 }

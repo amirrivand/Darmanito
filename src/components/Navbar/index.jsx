@@ -22,13 +22,13 @@ function Navbar() {
                                 <Link to="/">صفحه اصلی</Link>
                             </li>
                             <li>
-                                <Link to="/">درباره ما</Link>
+                                <Link to="/about">درباره ما</Link>
                             </li>
                             <li>
-                                <Link to="/">تماس باما</Link>
+                                <Link to="/contact">تماس باما</Link>
                             </li>
                             <li>
-                                <Link to="/">عضویت داروخانه‌ها</Link>
+                                <Link to="/register">عضویت داروخانه‌ها</Link>
                             </li>
                         </ul>
                     </div>

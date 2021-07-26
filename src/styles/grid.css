@@ -6,7 +6,9 @@
     grid-gap: 16px;
     grid-template-columns: repeat(12, 1fr);
 }
-
+.clear-row-gap {
+    grid-row-gap: 0;
+}
 .col-m-expand, .col-d-expand {
     max-width: 100%;
 }

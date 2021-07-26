@@ -10,12 +10,12 @@ function DownloadBox() {
     const [mobile, setMobile] = useState('')
 
     return (
-        <section className="bg-primary dlbox">
-            <div className="container flex">
-                <div className="flex flex-column flex-justify-center">
-                    <strong className="text-large mb-s block">دانلود اپلیکیشن درمانیتو</strong>
-                    <span className="text-small block">برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</span>
-                    <div class="single-line-form">
+        <section className="bg-primary position-relative overflow-hidden mb-g">
+            <div className="container grid-wrapper dlbox clear-row-gap">
+                <div className="col-d-6 col-m-expand flex flex-column flex-justify-center">
+                    <strong className="text-large mb-s">دانلود اپلیکیشن درمانیتو</strong>
+                    <span className="text-small">برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</span>
+                    <div class="single-line-form mb-s">
                         <form>
                             <input type="text" placeholder="شماره همراه را وارد کنید ..." value={mobile} onChange={e => setMobile(e.target.value)} />
                             <input type="submit" value="بفرست" />
@@ -40,7 +40,7 @@ function DownloadBox() {
                         </li>
                     </ul>
                 </div>
-                <div className="mr-auto">
+                <div className="mr-auto demoImage col-m-expand col-d-6 flex" style={{alignItems: "flex-end"}}>
                     <img src={AppDemo} alt="دانلود اپلیکیشن درمانیتو" />
                 </div>
                 

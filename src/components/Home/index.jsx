@@ -4,6 +4,8 @@ import HeaderImage from '../../assets/slide__image.svg'
 import AboutCard from './AboutCard'
 import PossibilitiesCard from './PossibilitiesCard'
 import DownloadBox from './DownloadBox'
+import Registeration from './Registeration'
+import Support from './Support'
 import {Link} from 'react-router-dom'
 
 import '../../styles/home.css'
@@ -14,7 +16,7 @@ function Home() {
             <div className="mb-g">
                 <Header image={HeaderImage} alt="اپلیکیشن درمانیتو">
                     <h1 className="text-primary text-bold">اپلیکیشن درمانیتو</h1>
-                    <p className="text-light">درمانیتو، سامانه هوشمند درمان و سلامت</p>
+                    <p className="text-light mb-s">درمانیتو، سامانه هوشمند درمان و سلامت</p>
                     <ul className="btn-group">
                         <li>
                             <Link class="btn btn-primary" to="/">دانلود درمانیتو</Link>
@@ -27,14 +29,13 @@ function Home() {
             </div>
             <main>
                 <section className="container">
-
-                    {/* About Darmanito */}
                     <AboutCard />
-
-                    {/* Possibilities */}
                     <PossibilitiesCard />
                 </section>
+                
                 <DownloadBox />
+                <Registeration />
+                <Support />
             </main>
             
         </>

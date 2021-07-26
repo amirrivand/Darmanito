@@ -19,3 +19,12 @@
 .flex-align-center {
     align-items: center;
 }
+.flex-align-end {
+    align-items: flex-end;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-auto {
+    flex: 1 1 auto;
+}
