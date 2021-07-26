@@ -21,7 +21,7 @@ function DownloadBox() {
                             <input type="submit" value="بفرست" />
                         </form>
                     </div>
-                    <ul class="btn-group">
+                    <ul className="btn-group">
                         <li>
                             <a href="/" title="" class="btn btn-secondary flex flex-align-center flex-justify-center">
                                 <img src={Android} alt="" style={{marginLeft: '16px'}} />

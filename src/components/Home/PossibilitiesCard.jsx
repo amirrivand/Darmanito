@@ -14,25 +14,25 @@ function PossibilitiesCard() {
             <Card side={(
                 <ul className="possibilities">
                     <li>
-                        <button type="button" className="_button">
+                        <button>
                             <img src={Drugstore} alt="" />
                             <span className="text-xsmall">داروخانه</span>
                         </button>
                     </li>
                     <li>
-                        <button type="button" className="_button">
+                        <button>
                             <img src={Shop} alt="" />
                             <span className="text-xsmall">فروشگاه</span>
                         </button>
                     </li>
                     <li>
-                        <button type="button" className="_button">
+                        <button>
                             <img src={Visit} alt="" />
                             <span className="text-xsmall">ویزیت آنلاین</span>
                         </button>
                     </li>
                     <li>
-                        <button type="button" className="_button">
+                        <button>
                             <img src={Reserve} alt="" />
                             <span className="text-xsmall">نوبت دهی آنلاین</span>
                         </button>

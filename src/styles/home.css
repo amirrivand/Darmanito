@@ -49,8 +49,10 @@
     display: grid;
     grid-gap: 54px 43px;
     grid-template: 1fr 1fr / 1fr 1fr;
+    position: relative;
+    z-index: -1;
 }
-.possibilities ._button {
+.possibilities button {
     width: 160px;
     height: 160px;
     border-radius: 25px;
@@ -64,12 +66,12 @@
     opacity: .5;
     background-color: #fff;
 }
-.possibilities ._button:hover {
+.possibilities button:hover {
     box-shadow: 0 0 30px rgba(24, 148, 255, .16);
     filter: grayscale(0);
     opacity: 1;
 }
-.possibilities ._button img {
+.possibilities button img {
     object-fit: none;
     margin-bottom: 16px;
 }
