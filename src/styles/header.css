@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    .header__backgroundImage {
+        background-image: url('../assets/background.svg');
+        background-position: calc(((100% - 1088px)/2) + 80px);
+        background-repeat: no-repeat;
+        height: 618.92px;
+    }
+}
+
+._withImage h1 {
+    font-size: 2em;
+    margin-bottom: 27px;
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+    ._withImage .__body {
+        text-align: center;
+    }
+    ._withImage h1 {
+        font-size: 1.5em;
+        margin-bottom: 16px;
+    }
+}

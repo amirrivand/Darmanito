@@ -1,0 +1,131 @@
+/* Property Card */
+.property-box {
+    display: grid;
+    grid-gap: 72px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 64px;
+}
+.property img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(24, 148, 255, .16);
+    object-position: center center;
+    object-fit: none;
+}
+
+/* Play Demo */
+.play-demo {
+    aspect-ratio: 1/1;
+    background-color: #E6F3FF;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.play-demo .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92px;
+    height: 92px;
+    background-color: #00DE9A;
+    box-shadow: 0 0 0 11px rgba(0, 222, 154, .16);
+    content: url('../assets/play.svg');
+    border-radius: 50%;
+    object-fit: none;
+}
+
+/* Possibilities List */
+.possibilities {
+    display: grid;
+    grid-gap: 54px 43px;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+.possibilities ._button {
+    width: 160px;
+    height: 160px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+    box-shadow: 0 0 20px rgba(24, 148, 255, .1);
+    filter: grayscale(100%);
+    opacity: .5;
+}
+.possibilities ._button:hover {
+    box-shadow: 0 0 30px rgba(24, 148, 255, .16);
+    filter: grayscale(0);
+    opacity: 1;
+}
+.possibilities ._button img {
+    object-fit: none;
+    margin-bottom: 16px;
+}
+
+/* Download Box */
+.dlbox {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    /* Download Box */
+    .dlbox {
+        height: 612px;
+    }
+    .dlbox::before {
+        width: 622px;
+        height: 407.91px;
+        transform: rotate(-195deg);
+        filter: opacity(20%);
+        display: block;
+        position: absolute;
+        content: url('../assets/background.svg');
+        scale: .8;
+        top: 0;
+        right: -50px;
+    }
+    .dlbox::after {
+        width: 943.75px;
+        position: absolute;
+        left: -50px;
+        top: -50px;
+        content: url('../assets/background.svg');
+        object-fit: cover;
+        filter: opacity(20%);
+        z-index: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+    .possibilities {
+        display: flex;
+        overflow: hidden;
+        overflow-x: auto;
+        padding: 2em 1em;
+    }
+    .possibilities > * {
+        margin-left: 16px;
+    }
+    .possibilities ._button {
+        width: 120px;
+        height: 120px;
+    }
+    .dlbox {
+        padding-top: 48px;
+    }
+    /* .dlbox .btn {
+        width: max-content;
+        max-width: max-content;
+        margin: 0 auto;
+    } */
+}

@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+    .card > *:first-child {
+        margin-left: calc((100% / 12) + 32px);
+    }
+}
+.card-title {
+    margin-bottom: 28px;
+    font-size: 1.11em;
+    line-height: 24px;
+    border-right: 4px solid #00DE9A;
+    padding-right: 5.5px;
+}
