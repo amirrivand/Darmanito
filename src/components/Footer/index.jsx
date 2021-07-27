@@ -18,13 +18,13 @@ function Footer() {
                         <div className="logo flex mb-s">
                             <img src={Logo} alt="اپلیکیشن درمانیتو" />
                             <div className="flex flex-column flex-space-between">
-                                <strong>درمانیتو</strong>
+                                <strong className="block">درمانیتو</strong>
                                 <span className="text-xxsmall">همراه شما در درمان</span>
                             </div>
                         </div>
                         <div className="mb-s text-xsmall">
                             <strong>سوپر اپلیکیشن حوزه درمان و سلامت</strong>
-                            <span className="text-light">تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</span>
+                            <span className="text-light block">تمام حقوق مادی و معنوی این وبسایت متعلق به درمانیتو است.</span>
                         </div>
                         <ul className="social-group">
                             <li>
