@@ -425,6 +425,9 @@ details summary::before {
     top: 2px;
     font-size: 30px;
 }
+details[open] summary::before {
+    content: '-';
+}
 details p {
     line-height: 40px;
     border-right: 4px solid #00DE9A;
