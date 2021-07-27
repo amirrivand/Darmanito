@@ -28,3 +28,14 @@
 .flex-auto {
     flex: 1 1 auto;
 }
+@media (max-width: 680px) {
+    .flex-column-m {
+        flex-direction: column;
+    }
+    .flex-row-m {
+        flex-direction: row;
+    }
+    .flex-column-reverse-m {
+        flex-direction: column-reverse;
+    }
+}

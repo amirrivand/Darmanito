@@ -5,7 +5,6 @@ import AboutCard from './AboutCard'
 import PossibilitiesCard from './PossibilitiesCard'
 import DownloadBox from './DownloadBox'
 import Registeration from './Registeration'
-import Support from './Support'
 import {Link} from 'react-router-dom'
 
 import '../../styles/home.css'
@@ -35,7 +34,6 @@ function Home() {
                 
                 <DownloadBox />
                 <Registeration />
-                <Support />
             </main>
             
         </>

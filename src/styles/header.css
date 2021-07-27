@@ -1,3 +1,20 @@
+._withImage h1 {
+    font-size: 2em;
+    margin-bottom: 27px;
+}
+
+/* Text Mode Header */
+.textModeHeader {
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
 @media (min-width: 768px) {
     .header__backgroundImage {
         background-image: url('../assets/background.svg');
@@ -5,14 +22,30 @@
         background-repeat: no-repeat;
         height: 618.92px;
     }
+    .header__backgroundImage.disableBg {
+        background-image: none;
+    }
+
+    /* Text Mode Header */
+    .textModeHeader::after, .textModeHeader::before {
+        content: url('../assets/background.svg');
+        display: block;
+        position: absolute;
+        filter: opacity(.2);
+    }
+    .textModeHeader::after {
+        top: -100px;
+        transform: scale(.7) rotate(22deg);
+        left: -80px;
+    }
+    .textModeHeader::before {
+        top: -170px;
+    transform: scale(0.5) rotate(4deg);
+    right: -80px;
+    }
 }
 
-._withImage h1 {
-    font-size: 2em;
-    margin-bottom: 27px;
-}
-
-@media (min-width: 320px) and (max-width: 680px) {
+@media (max-width: 680px) {
     ._withImage .__body {
         text-align: center;
     }

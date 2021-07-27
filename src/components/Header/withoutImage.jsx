@@ -1,9 +1,9 @@
 import React from 'react'
 
-function HeaderMode() {
+function HeaderMode({children}) {
     return (
-        <div>
-            
+        <div className="bg-primary textModeHeader mb-g">
+            {children}
         </div>
     )
 }

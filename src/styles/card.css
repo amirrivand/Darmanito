@@ -10,3 +10,8 @@
     border-right: 4px solid #00DE9A;
     padding-right: 5.5px;
 }
+@media (max-width: 680px) {
+    .card-title {
+        font-size: 16px;
+    }
+}

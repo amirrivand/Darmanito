@@ -1,7 +1,7 @@
 import React from "react";
 
 // Assets
-import SupportIcon from '../../assets/support.svg'
+import SupportIcon from '../assets/support.svg'
 
 function Support() {
   return (
@@ -16,7 +16,7 @@ function Support() {
           </p>
         </div>
         <div className="mr-auto support__button">
-            <button type="button" class="btn btn-secondary flex flex-space-between flex-align-center">
+            <button type="button" className="btn btn-secondary flex flex-space-between flex-align-center">
                 <img src={SupportIcon} alt="" style={{marginLeft: 16}} />
                 پشتیبانی:
                 <span dir="ltr">۰۲۱-۴۴۲۱۹۶۷۱</span>
