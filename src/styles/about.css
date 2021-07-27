@@ -16,7 +16,7 @@
     content: url('../assets/user.svg');
     display: block;
     object-position: center center;
-    object-fit: scale-down;
+    object-fit: none;
     margin-left: 16px;
 }
 .ds-card .pin {

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/navbar.css";
 import Logo from "../../assets/logo.svg";
-// import BurgerMenu from '../../assets/burger-menu.svg'
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,19 +11,23 @@ function Navbar() {
     setShowMenu((old) => !old);
   };
 
+  const closeMenu = e => {
+    setShowMenu(false);
+  }
+
   const Navlist = ({ className }) => (
     <ul className={className}>
       <li>
-        <Link to="/">صفحه اصلی</Link>
+        <Link to="/" onClick={closeMenu}>صفحه اصلی</Link>
       </li>
       <li>
-        <Link to="/about">درباره ما</Link>
+        <Link to="/about" onClick={closeMenu}>درباره ما</Link>
       </li>
       <li>
-        <Link to="/contact">تماس باما</Link>
+        <Link to="/contact" onClick={closeMenu}>تماس باما</Link>
       </li>
       <li>
-        <Link to="/register">عضویت داروخانه‌ها</Link>
+        <Link to="/register" onClick={closeMenu}>عضویت داروخانه‌ها</Link>
       </li>
     </ul>
   );
