@@ -38,7 +38,7 @@ function Contact() {
                             <div className="map">
                                 <div className="information">
                                     <div className="grid-wrapper">
-                                        <div className="col-m-expand col-d-6 flex flex-column flex-row-m flex-space-between">
+                                        <div className="col-1 flex flex-column flex-row-m flex-space-between">
                                             <div className="flex flex-column">
                                                 <span>ایمیل</span>
                                                 <a className="text-primary text-small text-bold" href="mailto:info@nahiraTech.com">info@nahiraTech.com</a>
@@ -48,7 +48,7 @@ function Contact() {
                                                 <a className="text-primary text-small text-bold" href="tel:+982144219671">۰۲۱-۴۴۲۱۹۶۷۱</a>
                                             </div>
                                         </div>
-                                        <div className="col-m-expand col-d-6">
+                                        <div className="col-1">
                                             <span>آدرس</span>
                                             <address className="text-light text-small">
                                             تهران، طرشت، خیابان شهید چوب تراش، خیابان شهید حسین مردی، بن‌بست پنجم، پلاک 15، واحد 1

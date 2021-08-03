@@ -83,7 +83,7 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 680px) {
+@media (max-width: 768px) {
     .ds-card {
         width: 100%;
         padding: 16px;
@@ -96,7 +96,10 @@
         display: none;
     }
 }
-
+.sc {
+    flex: 1;
+    max-width: 303;
+}
 @media (min-width: 768px) {
     /* Service Card */
     .sc {

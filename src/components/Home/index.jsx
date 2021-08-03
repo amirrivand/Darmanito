@@ -18,10 +18,10 @@ function Home() {
                     <p className="text-light mb-s">درمانیتو، سامانه هوشمند درمان و سلامت</p>
                     <ul className="btn-group">
                         <li>
-                            <Link class="btn btn-primary" to="/">دانلود درمانیتو</Link>
+                            <Link className="btn btn-primary" to="/">دانلود درمانیتو</Link>
                         </li>
                         <li>
-                            <Link class="btn btn-primary-outline" to="/">عضویت داروخانه ها</Link>
+                            <Link className="btn btn-primary-outline" to="/">عضویت داروخانه ها</Link>
                         </li>
                     </ul>
                 </Header>

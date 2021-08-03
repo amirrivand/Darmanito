@@ -2,97 +2,62 @@
 /* Grid Columns = 12 */
 
 .grid-wrapper {
-    display: grid;
+    display: flex;
+    max-width: 100%;
+    /* overflow: hidden; */
+    /* margin: 0 -16px; */
+    flex-wrap: wrap;
+    height: inherit;
     grid-gap: 16px;
-    grid-template-columns: repeat(12, 1fr);
+}
+.grid-wrapper > * {
+    margin: 0 8px;
+}
+.clear-gap {
+    grid-gap: 0;
 }
 .clear-row-gap {
     grid-row-gap: 0;
 }
+.nowrap {
+    flex-wrap: nowrap;
+}
+
 .col-m-expand, .col-d-expand {
     max-width: 100%;
 }
 
-/* Columns */
-
+.col-1 {
+    flex: 1;
+}
+.col-15 {
+    flex: 1.5;
+}
+.col-2 {
+    flex: 2;
+}
+.col-3 {
+    flex: 3;
+}
 @media (min-width: 768px) {
-    .col-d-1 {
-        grid-column: span 1;
+    .d-hidden {
+        display: none;
     }
-    .col-d-2 {
-        grid-column: span 2;
+}
+@media (max-width: 768px) {
+    .col-1 {
+        flex-basis: 100%;
     }
-    .col-d-3 {
-        grid-column: span 3;
+    .col-expand-m {
+        flex-basis: 100%;
     }
-    .col-d-4 {
-        grid-column: span 4;
-    }
-    .col-d-5 {
-        grid-column: span 5;
-    }
-    .col-d-6 {
-        grid-column: span 6;
-    }
-    .col-d-7 {
-        grid-column: span 7;
-    }
-    .col-d-8 {
-        grid-column: span 8;
-    }
-    .col-d-9 {
-        grid-column: span 9;
-    }
-    .col-d-10 {
-        grid-column: span 10;
-    }
-    .col-d-11 {
-        grid-column: span 11;
-    }
-    .col-expand, .col-d-expand {
-        grid-column: 1/-1;
+    .m-hidden {
+        display: none !important;
     }
 }
 
-@media (min-width: 320px) and (max-width: 680px) {
-    .col-m-1 {
-        grid-column: span 1;
-    }
-    .col-m-2 {
-        grid-column: span 2;
-    }
-    .col-m-3 {
-        grid-column: span 3;
-    }
-    .col-m-4 {
-        grid-column: span 4;
-    }
-    .col-m-5 {
-        grid-column: span 5;
-    }
-    .col-m-6 {
-        grid-column: span 6;
-    }
-    .col-m-7 {
-        grid-column: span 7;
-    }
-    .col-m-8 {
-        grid-column: span 8;
-    }
-    .col-m-9 {
-        grid-column: span 9;
-    }
-    .col-m-10 {
-        grid-column: span 10;
-    }
-    .col-m-11 {
-        grid-column: span 11;
-    }
-    .col-m-expand {
-        grid-column: 1/-1;
-    }
-
-    .row-m-1 {
-        grid-row: 1;
+@media (max-width: 640px) {
+    .col-expand-s {
+        flex-basis: 100%;
     }
 }

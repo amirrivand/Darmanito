@@ -55,7 +55,7 @@ function Navbar() {
             <button
               type="button"
               onClick={menuHandler}
-              className="burger-menu d-hidden burger"
+              className="burger-menu burger"
             >
               <span className={showMenu ? "active" : ""}></span>
             </button>

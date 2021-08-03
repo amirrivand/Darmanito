@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 
 function ServiceCard({data}) {
     return (
+        
         <div className="box br-large padding-small flex flex-column flex-space-evenly sc mb">
             {data.thumbnail && <img src={data.thumbnail} alt={data.title} className="my-2" style={{
                 height: 'min-content'

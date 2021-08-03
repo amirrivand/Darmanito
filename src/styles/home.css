@@ -1,9 +1,24 @@
 /* Property Card */
 .property-box {
-    display: grid;
-    grid-gap: 72px;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width: 1200px) {
+    .property-box {
+        grid-gap: auto;
+    }
+}
+.property {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.property span {
+    font-size: small !important;
+    text-align: center;
 }
 .property img {
     width: 80px;
@@ -17,13 +32,14 @@
 
 /* Play Demo */
 .play-demo {
-    aspect-ratio: 1/1;
     background-color: #E6F3FF;
     border-radius: 20px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    width: 356.67px;
+    height: 356.67px;
 }
 .play-demo .play {
     display: flex;
@@ -52,6 +68,17 @@
     position: relative;
     z-index: 0;
 }
+@media (max-width: 980px) {
+    .possibilities {
+        display: flex;
+        overflow: hidden;
+        overflow-x: auto;
+        padding: 2em 1em;
+    }
+    .possibilities > * {
+        margin-left: 16px;
+    }
+}
 
 /* Support */
 .support {
@@ -63,13 +90,26 @@
     flex-wrap: wrap;
 }
 
-
-@media (min-width: 768px) {
+/* .dlbox {
+    padding: 64px 0;
+} */
+.demoImage {
+    /* min-width: 309.97px; */
+}
+@media (min-width: 640px) {
     /* Download Box */
     .dlbox {
         height: 612px;
     }
-    .dlbox::before {
+    .dlbox-background {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        content: '';
+    }
+    .dlbox-background::before {
         width: 622px;
         height: 407.91px;
         transform: rotate(-195deg);
@@ -80,9 +120,8 @@
         scale: .8;
         top: 0;
         right: -50px;
-        z-index: 2;
     }
-    .dlbox::after {
+    .dlbox-background::after {
         width: 943.75px;
         position: absolute;
         left: -50px;
@@ -90,9 +129,34 @@
         content: url('../assets/background.svg');
         object-fit: cover;
         filter: opacity(20%);
-        z-index: 2;
     }
 
+}
+
+@media (max-width: 768px) {
+    .dlbox {
+        padding-top: 48px !important;
+    }
+    .dlbox .btn-group {
+        margin: 0 auto;
+    }
+    .regImage {
+        padding: 48px 0;
+    }
+    /* Support */
+    .support__text {
+        width: 100%;
+        align-items: center;
+    }
+    .support__button {
+        margin: 0 auto;
+    }
+    .registeration .grid-wrapper > *:first-child {
+        padding-top: 32px;
+    }
+}
+
+@media (min-width: 1280px) {
     /* Registeration */
     .registeration::before {
         display: block;
@@ -103,32 +167,9 @@
         z-index: -1;
     }
 }
-
-@media (max-width: 680px) {
-    .possibilities {
-        display: flex;
-        overflow: hidden;
-        overflow-x: auto;
-        padding: 2em 1em;
-    }
-    .possibilities > * {
-        margin-left: 16px;
-    }
-    .dlbox {
-        padding-top: 48px !important;
-    }
+@media (max-width: 1280px) {
     /* Registeration */
     .registeration-container {
-        padding: 0 13px;
-    }
-    .regImage {
-        padding: 48px 0;
-    }
-    /* Support */
-    .support__text {
-        justify-content: center;
-    }
-    .support__button {
-        margin: 0 auto;
+        padding: 0 1em;
     }
 }

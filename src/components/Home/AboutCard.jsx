@@ -21,20 +21,20 @@ function AboutCard() {
                 <p className="text-small text-light">درمانیتو یک سامانه است که امکان سفارش دارو، محصولات آرایشی بهداشتی نوبت گیری و مشاوره پزشکان را به راحتی و بصورت آنلاین فراهم کرده است.</p>
                 <div className="property-box m-hidden">
                     <div className="property">
-                        <img src={FastSearch} alt="" />
-                        <span></span>
+                        <img className="mb-s" src={FastSearch} alt="" />
+                        <span className="text-xsmall text-light">جستجو سریع</span>
                     </div>
                     <div className="property">
-                        <img src={Economy} alt="" />
-                        <span></span>
+                        <img className="mb-s" src={Economy} alt="" />
+                        <span className="text-xsmall text-light">به صرفه</span>
                     </div>
                     <div className="property">
-                        <img src={Comfortable} alt="" />
-                        <span></span>
+                        <img className="mb-s" src={Comfortable} alt="" />
+                        <span className="text-xsmall text-light">راحت</span>
                     </div>
                     <div className="property">
-                        <img src={Search} alt="" />
-                        <span></span>
+                        <img className="mb-s" src={Search} alt="" />
+                        <span className="text-xsmall text-light">جستجو سریع</span>
                     </div>
                 </div>
             </Card>

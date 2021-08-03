@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Header from '../Header'
 import DrugstoreCard from './DrugstoreCard'
 import ServiceCard from './ServiceCard'
+import {nanoid} from 'nanoid'
 
 import '../../styles/about.css'
 
@@ -41,29 +42,29 @@ function About() {
                 <h1 className="text-primary text-bold">شما هم در سلامت و بهبود مردم کشورمون موثر باشید</h1>
                 <p className="text-light mb-s">با ثبت نام به عنوان داروخانه یا فروشگاه و داروخانه شما هم به سیستم درمان کمک کنید و به هزاران کاربر خدمات ارائه بدین و روزانه درآمد سفارش های خودتون رو تسویه کنید</p>
                 </div>
-                <div class="single-line-form mb-s">
-                    <form>
-                        <input type="text" placeholder="شماره همراه را وارد کنید ..." value={mobile} onChange={e => setMobile(e.target.value)} />
-                        <input type="submit" value="ثبت نام سریع" />
-                    </form>
+                <div className="single-line-form mb-s">
+                    <input type="text" placeholder="شماره همراه را وارد کنید ..." value={mobile} onChange={e => setMobile(e.target.value)} />
+                    <input type="submit" value="ثبت نام سریع" />
                 </div>
             </Header>
 
             <main>
                 {/* Counts */}
-                <div class="bg-primary position-relative counts-container mb-g overflow-hidden">
-                    <div className="container flex flex-wrap flex-space-between flex-align-center flex-column-m" style={{minHeight: 150}}>
-                        <div className="flex flex-column flex-align-center my-1">
-                            <span className="text-small">تعداد کاربران درمانیتو</span>
-                            <span dir="ltr" className="text-xlarge">+120,000</span>
-                        </div>
-                        <div className="flex flex-column flex-align-center my-1">
-                            <span className="text-small">تعداد داروخانه و مراکز</span>
-                            <span dir="ltr" className="text-xlarge">+120,000</span>
-                        </div>
-                        <div className="flex flex-column flex-align-center my-1">
-                            <span className="text-small">تعداد داروخانه و مراکز</span>
-                            <span dir="ltr" className="text-xlarge">+120,000</span>
+                <div className="bg-primary position-relative counts-container mb-g overflow-hidden">
+                    <div className="container">
+                        <div className="grid-wrapper" style={{minHeight: 150}}>    
+                            <div className="col-1 flex flex-column flex-justify-center flex-align-center my-1">
+                                <span className="text-small">تعداد کاربران درمانیتو</span>
+                                <span dir="ltr" className="text-xlarge">+120,000</span>
+                            </div>
+                            <div className="col-1 flex flex-column flex-justify-center flex-align-center my-1">
+                                <span className="text-small">تعداد داروخانه و مراکز</span>
+                                <span dir="ltr" className="text-xlarge">+120,000</span>
+                            </div>
+                            <div className="col-1 flex flex-column flex-justify-center flex-align-center my-1">
+                                <span className="text-small">تعداد داروخانه و مراکز</span>
+                                <span dir="ltr" className="text-xlarge">+120,000</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,9 +75,9 @@ function About() {
                         <h2 className="card-title">در درمانیتو چه خدمات ارائه خواهید داد؟</h2>
                         <span className="text-light text-small">خدمت مورد نظر خود را برای ثبت نام انتخاب کنید</span>
                     </div>
-                    <div className="flex flex-space-between flex-wrap">
+                    <div className="grid-wrapper flex-space-between">
                         {services && services.map(service => (
-                            <ServiceCard data={service} />
+                            <ServiceCard key={nanoid()} data={service} />
                         ))}
                     </div>
                 </div>

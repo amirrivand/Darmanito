@@ -11,7 +11,7 @@ function PossibilitiesCard() {
     return (
         <div className="mb-g">
             <h3 className="card-title text-bold text-primary">امکانات درمانیتو</h3>
-            <Card side={(
+            <Card tabletExpand={true} side={(
                 <ul className="possibilities">
                     <li>
                         <button className="icon-btn">
