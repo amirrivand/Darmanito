@@ -101,6 +101,10 @@
     .dlbox {
         height: 612px;
     }
+    .support__text > *:not(:last-child) {
+        margin-left: 16px;
+        /* grid-column-gap: 16px; */
+    }
     .dlbox-background {
         z-index: 0;
         position: absolute;

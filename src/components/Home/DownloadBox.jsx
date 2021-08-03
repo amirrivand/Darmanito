@@ -34,10 +34,10 @@ function DownloadBox() {
                 <img src={Android} alt="" style={{ marginLeft: "16px" }} />
                 دانلود مستقیم
               </button>
-              <button className="btn btn-secondary flex flex-justify-center">
+              <button className="btn btn-secondary flex flex-align-center flex-justify-center">
                 <img src={Bazzar} alt="" />
               </button>
-              <button className="btn btn-secondary flex flex-justify-center">
+              <button className="btn btn-secondary flex flex-align-center flex-justify-center">
                 <img src={Sibapp} alt="" />
               </button>
             </div>

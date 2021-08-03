@@ -17,7 +17,7 @@ function Support() {
         <div className="mr-auto support__button">
           <button
             type="button"
-            className="btn btn-secondary flex flex-space-between flex-align-center"
+            className="btn btn-secondary flex flex-nowrap flex-space-between flex-align-center"
           >
             <img src={SupportIcon} alt="" style={{ marginLeft: 16 }} />
             <span dir="ltr">پشتیبانی: ۰۲۱۴۴۲۱۹۶۷۱</span>

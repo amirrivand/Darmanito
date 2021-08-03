@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     height: inherit;
     grid-gap: 16px;
+    justify-content: space-between;
 }
 .grid-wrapper > * {
     margin: 0 8px;
@@ -19,7 +20,7 @@
 .clear-row-gap {
     grid-row-gap: 0;
 }
-.nowrap {
+.flex-nowrap {
     flex-wrap: nowrap;
 }
 

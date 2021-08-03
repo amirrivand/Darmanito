@@ -21,13 +21,17 @@ nav {
 /* Navbar */
 .navbar-nav {
     display: flex;
-    grid-column-gap: 2em;
+    /* grid-column-gap: 2em; */
 }
 @media (max-width: 980px) {
     .navbar-nav li a {
         font-size: small !important;
     }
     
+
+}
+.navbar-nav li {
+    margin-left: 2em;
 }
 .navbar-nav li a {
     color: rgba(0, 0, 0, .7);

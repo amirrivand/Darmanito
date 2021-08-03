@@ -16,14 +16,14 @@ function Home() {
                 <Header image={HeaderImage} alt="اپلیکیشن درمانیتو">
                     <h1 className="text-primary text-bold">اپلیکیشن درمانیتو</h1>
                     <p className="text-light mb-s">درمانیتو، سامانه هوشمند درمان و سلامت</p>
-                    <ul className="btn-group">
-                        <li>
+                    <div className="btn-group">
+                        <button>
                             <Link className="btn btn-primary" to="/">دانلود درمانیتو</Link>
-                        </li>
-                        <li>
+                        </button>
+                        <button>
                             <Link className="btn btn-primary-outline" to="/">عضویت داروخانه ها</Link>
-                        </li>
-                    </ul>
+                        </button>
+                    </div>
                 </Header>
             </div>
             <main>

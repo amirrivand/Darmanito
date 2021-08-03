@@ -100,26 +100,14 @@ function Footer() {
           </div>
           <div className="col-2 m-hidden">
             <strong className="text-small mb-s block">دانلود درمانیتو</strong>
-            <ul className="btn-group">
-              <li>
-                <a
-                  href="/"
-                  title=""
-                  className="btn btn-dark flex flex-justify-center"
-                >
-                  <img src={Bazzar} alt="" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  title=""
-                  className="btn btn-dark flex flex-justify-center"
-                >
-                  <img src={Sibapp} alt="" />
-                </a>
-              </li>
-            </ul>
+            <div className="btn-group">
+              <button className="btn btn-dark flex flex-justify-center">
+                <img src={Bazzar} alt="" />
+              </button>
+              <button className="btn btn-dark flex flex-justify-center">
+                <img src={Sibapp} alt="" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

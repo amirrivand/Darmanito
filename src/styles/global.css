@@ -73,6 +73,8 @@ table {
 a, button, input {
     border: none;
     outline: none;
+    -webkit-appearance: none;
+    background: none;
 }
 form {
     width: auto;
@@ -577,8 +579,9 @@ details p {
         box-shadow: 0 0 0 0 rgba(24,148,255, .5);
     }
 }
-.support__text {
-    grid-column-gap: 16px;
+.support__text > *:not(:last-child) {
+    margin-left: 16px;
+    /* grid-column-gap: 16px; */
 }
 @media (max-width: 768px) {
     .support__text {
