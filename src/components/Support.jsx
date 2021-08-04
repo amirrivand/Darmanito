@@ -20,7 +20,7 @@ function Support() {
             className="btn btn-secondary flex flex-nowrap flex-space-between flex-align-center"
           >
             <img src={SupportIcon} alt="" style={{ marginLeft: 16 }} />
-            <span dir="ltr">پشتیبانی: ۰۲۱۴۴۲۱۹۶۷۱</span>
+            <a href="tel:+982144219671" style={{display: 'inline-table', color: '#fff'}} dir="ltr">پشتیبانی: ۰۲۱۴۴۲۱۹۶۷۱</a>
           </button>
         </div>
       </div>
