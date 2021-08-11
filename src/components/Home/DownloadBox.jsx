@@ -12,8 +12,8 @@ function DownloadBox() {
     <section className="bg-primary position-relative overflow-hidden pt-1 mb-g">
       <div className="dlbox-background"></div>
       <div className="container position-relative">
-        <div className="grid-wrapper dlbox clear-row-gap">
-          <div className="col-15 flex flex-column flex-justify-center">
+        <div className="grid-wrapper dlbox">
+          <div className="col-2 flex flex-column flex-justify-center">
             <strong className="text-large mb-s">
               دانلود اپلیکیشن درمانیتو
             </strong>
@@ -30,15 +30,30 @@ function DownloadBox() {
               <input type="submit" value="بفرست" />
             </div>
             <div className="btn-group mb-s">
-              <button className="btn btn-secondary flex flex-align-center flex-justify-center">
-                <img src={Android} alt="" style={{ marginLeft: "16px" }} />
-                دانلود مستقیم
+              <button>
+                <a
+                  href="/"
+                  className="btn btn-secondary flex flex-nowrap flex-align-center flex-justify-center m-hidden"
+                >
+                  <img src={Android} alt="Download Android" style={{marginLeft: "1em"}} />
+                  <span>دانلود مستقیم</span>
+                </a>
               </button>
-              <button className="btn btn-secondary flex flex-align-center flex-justify-center">
-                <img src={Bazzar} alt="" />
+              <button>
+                <a
+                  href="/"
+                  className="btn btn-secondary flex flex-align-center flex-justify-center"
+                >
+                  <img src={Bazzar} alt="Cafe Bazaar" />
+                </a>
               </button>
-              <button className="btn btn-secondary flex flex-align-center flex-justify-center">
-                <img src={Sibapp} alt="" />
+              <button>
+                <a
+                  href="/"
+                  className="btn btn-secondary flex flex-align-center flex-justify-center"
+                >
+                  <img src={Sibapp} alt="SibApp" />
+                </a>
               </button>
             </div>
           </div>
@@ -46,7 +61,11 @@ function DownloadBox() {
             className="mr-auto demoImage col-1 flex"
             style={{ alignItems: "flex-end" }}
           >
-            <img className="m-auto" src={AppDemo} alt="دانلود اپلیکیشن درمانیتو" />
+            <img
+              className="m-auto appdemo__margin-mobile"
+              src={AppDemo}
+              alt="دانلود اپلیکیشن درمانیتو"
+            />
           </div>
         </div>
       </div>

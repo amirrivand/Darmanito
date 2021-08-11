@@ -1,3 +1,4 @@
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -38,5 +39,11 @@
     }
     .flex-column-reverse-m {
         flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-reverse {
+        flex-direction: column-reverse
     }
 }

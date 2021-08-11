@@ -32,7 +32,7 @@ function Footer() {
               <ul className="social-group">
                 <li>
                   <a href="/" title="">
-                    <img src={Instagram} alt="Instagram Account" />
+                    <img src={LinkedIn} alt="LinkedIn Account" />
                   </a>
                 </li>
                 <li>
@@ -42,7 +42,7 @@ function Footer() {
                 </li>
                 <li>
                   <a href="/" title="">
-                    <img src={LinkedIn} alt="LinkedIn Account" />
+                    <img src={Instagram} alt="Instagram Account" />
                   </a>
                 </li>
               </ul>
@@ -101,11 +101,11 @@ function Footer() {
           <div className="col-2 m-hidden">
             <strong className="text-small mb-s block">دانلود درمانیتو</strong>
             <div className="btn-group">
-              <button className="btn btn-dark flex flex-justify-center">
-                <img src={Bazzar} alt="" />
+              <button className="btn btn-dark flex flex-justify-center flex-align-center">
+                <img src={Bazzar} alt="Bazaar" />
               </button>
-              <button className="btn btn-dark flex flex-justify-center">
-                <img src={Sibapp} alt="" />
+              <button className="btn btn-dark flex flex-justify-center flex-align-center">
+                <img src={Sibapp} alt="Sibapp" />
               </button>
             </div>
           </div>

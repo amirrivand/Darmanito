@@ -10,7 +10,7 @@ function Registeration() {
     <section className="mb-g registeration-container">
       <div className="registeration container container-small box position-relative">
         <div className="grid-wrapper flex-reverse">
-          <div className="col-15 padding-large flex flex-column flex-justify-center">
+          <div className="col-15 flex flex-column flex-justify-center">
             <h3 className="text-bold card-title">
               عضویت داروخانه یا مراکز درمانی
             </h3>
@@ -29,7 +29,7 @@ function Registeration() {
             </div>
           </div>
           <div className="col-1 flex flex-justify-center flex-align-end row-m-1 regImage">
-            <img src={RegisterMan} alt="" />
+            <img src={RegisterMan}  alt="" />
           </div>
         </div>
       </div>

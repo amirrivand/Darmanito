@@ -7,7 +7,6 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   const menuHandler = (e) => {
-    console.log("log me");
     setShowMenu((old) => !old);
   };
 
@@ -15,13 +14,13 @@ function Navbar() {
     setShowMenu(false);
   }
 
-  const Navlist = ({ className }) => (
+  const Navlist = ({ className, children }) => (
     <ul className={className}>
       <li>
-        <Link to="/" onClick={closeMenu}>صفحه اصلی</Link>
+        <Link to="/" className="active" onClick={closeMenu}>صفحه اصلی</Link>
       </li>
       <li>
-        <Link to="/about" onClick={closeMenu}>درباره ما</Link>
+        <Link to="/" onClick={closeMenu}>درباره ما</Link>
       </li>
       <li>
         <Link to="/contact" onClick={closeMenu}>تماس باما</Link>
@@ -29,6 +28,7 @@ function Navbar() {
       <li>
         <Link to="/register" onClick={closeMenu}>عضویت داروخانه‌ها</Link>
       </li>
+      {children}
     </ul>
   );
 
@@ -65,7 +65,14 @@ function Navbar() {
       {window.innerWidth < window.innerHeight ? (
         <div className={`mobile__container ${showMenu ? "active" : ""}`}>
           <div className="container">
-            <Navlist className="navbar-list text-small" />
+            <Navlist className="navbar-list text-small" >
+              <li>
+                <Link to="/faq" onClick={closeMenu}>سوالات متداول</Link>
+              </li>
+              <li>
+                <Link to="/rules" onClick={closeMenu}>قوانین و شرایط</Link>
+              </li>
+            </Navlist>
             <hr />
             <button className="btn btn-default text-bold">
               دانلود درمانیتو

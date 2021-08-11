@@ -11,9 +11,9 @@
     grid-gap: 16px;
     justify-content: space-between;
 }
-.grid-wrapper > * {
+/* .grid-wrapper > * {
     margin: 0 8px;
-}
+} */
 .clear-gap {
     grid-gap: 0;
 }
